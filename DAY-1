@@ -1,1 +1,70 @@
-V
+EXPERIMENT-5
+mysql> use test;
+Database changed
+mysql> ALTER TABLE faculty ADD dept char(10);
+Query OK, 0 rows affected (0.31 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> DESC faculty;
++----------+----------+------+-----+---------+-------+
+| Field    | Type     | Null | Key | Default | Extra |
++----------+----------+------+-----+---------+-------+
+| FacNo    | int(4)   | YES  |     | NULL    |       |
+| FacName  | char(15) | YES  |     | NULL    |       |
+| Gender   | char(1)  | YES  |     | NULL    |       |
+| DOB      | date     | YES  |     | NULL    |       |
+| DOJ      | date     | YES  |     | NULL    |       |
+| MobileNo | int(10)  | YES  |     | NULL    |       |
+| dept     | char(10) | YES  |     | NULL    |       |
++----------+----------+------+-----+---------+-------+
+7 rows in set (0.02 sec)
+EXPERIMENT-1
+mysql> DESC student;
++----------+----------+------+-----+---------+-------+
+| Field    | Type     | Null | Key | Default | Extra |
++----------+----------+------+-----+---------+-------+
+| Regno    | int(3)   | YES  |     | NULL    |       |
+| Name     | char(15) | YES  |     | NULL    |       |
+| gender   | char(15) | YES  |     | NULL    |       |
+| Dob      | int(10)  | YES  |     | NULL    |       |
+| mobileno | int(10)  | YES  |     | NULL    |       |
+| city     | char(10) | YES  |     | NULL    |       |
++----------+----------+------+-----+---------+-------+
+6 rows in set (0.03 sec)
+EXPERIMENT-2
+mysql> DESC faculty;
++----------+----------+------+-----+---------+-------+
+| Field    | Type     | Null | Key | Default | Extra |
++----------+----------+------+-----+---------+-------+
+| FacNo    | int(4)   | YES  |     | NULL    |       |
+| FacName  | char(15) | YES  |     | NULL    |       |
+| Gender   | char(1)  | YES  |     | NULL    |       |
+| DOB      | date     | YES  |     | NULL    |       |
+| DOJ      | date     | YES  |     | NULL    |       |
+| MobileNo | int(10)  | YES  |     | NULL    |       |
+| dept     | char(10) | YES  |     | NULL    |       |
++----------+----------+------+-----+---------+-------+
+7 rows in set (0.03 sec)
+EXPERIMENT-3
+mysql> DESC dept;
++----------+----------+------+-----+---------+-------+
+| Field    | Type     | Null | Key | Default | Extra |
++----------+----------+------+-----+---------+-------+
+| deptno   | int(10)  | YES  |     | NULL    |       |
+| deptname | char(15) | YES  |     | NULL    |       |
+| depthead | char(15) | YES  |     | NULL    |       |
++----------+----------+------+-----+---------+-------+
+3 rows in set (0.02 sec)
+EXPERIMENT-4
+mysql> DESC course;
++------------+----------+------+-----+---------+-------+
+| Field      | Type     | Null | Key | Default | Extra |
++------------+----------+------+-----+---------+-------+
+| courseno   | int(10)  | YES  |     | NULL    |       |
+| coursedesc | char(15) | YES  |     | NULL    |       |
+| coursetype | char(15) | YES  |     | NULL    |       |
+| semno      | int(10)  | YES  |     | NULL    |       |
+| hallno     | int(10)  | YES  |     | NULL    |       |
+| Facno      | int(10)  | YES  |     | NULL    |       |
++------------+----------+------+-----+---------+-------+
+6 rows in set (0.03 sec)
